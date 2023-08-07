@@ -1,0 +1,27 @@
+.bg_image {
+    background-image: url('../../Global/images/MCIP_background1.png');
+    background-size: cover;
+    height: 100vh;
+  }
+
+.box{
+  width:60%;
+  height: 380px;
+  position: absolute;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+

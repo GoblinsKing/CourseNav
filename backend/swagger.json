@@ -1,0 +1,430 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.12",
+      "title": "CourseNav backend",
+      "description": "API backend for CourseNav"
+    },
+    "host": "localhost:3030",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Login",
+        "description": "API for users to login"
+      },
+      {
+        "name": "Course",
+        "description": "API for Course Relationship function"
+      },
+      {
+        "name": "Adviser",
+        "description": "API for Course advisor function"
+      }
+    ],
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+
+    "paths": {
+      "/login": {
+        "post": {
+          "tags": ["Login"],
+          "description": "This API is used for user login. The username and password are required for this API. After successful login, the name and token of the logged in user will be returned.",
+          "consumes": ["application/json"],
+          "parameters":[{
+            "in": "body",
+            "name": "body",
+            "description": "Login infomation input",
+            "required": true,
+            "schema":{
+              "$ref": "#/definitions/UserLogin"
+            }
+          }],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Missing Username/Password"
+            },
+            "401": {
+              "description": "Invalid Username/Password"
+            }
+          }
+        }
+      },
+
+      "/course": {
+        "post": {
+          "tags": ["Course"],
+          "description": "Get course information",
+          "consumes": ["application/json"],
+          "parameters":[
+            {"in": "header",
+              "name": "token",
+              "description": "Token Authorization"
+            },
+            {
+              "in": "body",
+              "name": "body",
+              "description": "Course code input",
+              "required": true,
+              "schema":{
+                "$ref": "#/definitions/courseCode"
+              }
+              }
+          ],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Invalid Token"
+            }
+          }
+        }
+      },
+
+      "/course/courseList": {
+        "get": {
+          "tags": ["Course"],
+          "description": "Get the list of all courses",
+          "consumes": ["application/json"],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Bad Request"
+            }
+          }
+        }
+      },
+
+      "/course/prerequisite": {
+        "post": {
+          "tags": ["Course"],
+          "description": "Get prerequisite information",
+          "consumes": ["application/json"],
+          "parameters":[
+            {"in": "header",
+              "name": "token",
+              "description": "Token Authorization",
+              "required": true
+            },
+            {
+            "in": "body",
+            "name": "body",
+            "description": "Course code input",
+            "required": true,
+            "schema":{
+              "$ref": "#/definitions/courseCode"
+            }
+            }
+          ],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Invalid Token"
+            }
+          },
+          "deprecated": true
+        }
+      },
+
+      "/course/grade": {
+        "post": {
+          "tags": ["Course"],
+          "description": "Get grade information",
+          "consumes": ["application/json"],
+          "parameters":[
+            {"in": "header",
+              "name": "token",
+              "description": "Token Authorization"
+            },
+            {
+            "in": "body",
+            "name": "body",
+            "description": "Course code input",
+            "required": true,
+            "schema":{
+              "$ref": "#/definitions/courseGrade"
+            }
+          }],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Invalid Token"
+            }
+          }
+        }
+      },
+
+      "/course/dependencyGrade": {
+        "post": {
+          "tags": ["Course"],
+          "description": "Get dependency Grade information",
+          "consumes": ["application/json"],
+          "parameters":[
+            {"in": "header",
+              "name": "token",
+              "description": "Token Authorization"
+            },
+            {
+            "in": "body",
+            "name": "body",
+            "description": "Course code input",
+            "required": true,
+            "schema":{
+              "$ref": "#/definitions/dependencyGrade"
+            }
+          }],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Invalid Token"
+            }
+          }
+        }
+      },
+
+      "/course/courseRelationship": {
+        "post": {
+          "tags": ["Course"],
+          "description": "give the main course and related course then return the grade relationship\nThe 'requiredGrades' is an optional input.",
+          "consumes": ["application/json"],
+          "parameters":[
+            {"in": "header",
+              "name": "token",
+              "description": "Token Authorization"
+            },
+            {
+            "in": "body",
+            "name": "body",
+            "description": "Course code input",
+            "required": true,
+            "schema":{
+              "$ref": "#/definitions/courseRelationship"
+            }
+          }],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Invalid Token"
+            }
+          }
+        }
+      },
+
+      "/adviser": {
+        "post": {
+          "tags": ["Adviser"],
+          "description": "Get course enroll advises",
+          "consumes": ["application/json"],
+          "parameters":[
+            {"in": "header",
+              "name": "token",
+              "description": "Token Authorization"
+            },
+            {
+            "in": "body",
+            "name": "body",
+            "description": "Enrolled course info",
+            "required": true,
+            "schema":{
+              "$ref": "#/definitions/courseInfoList"
+            }
+          }],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Invalid Token"
+            }
+          }
+        }
+      }
+
+
+
+
+
+    },
+    "definitions": {
+      "User": {
+        "required": ["id", "name", "username", "password"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "uniqueItems": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+
+      "UserLogin": {
+        "required": ["username", "password"],
+        "properties": {
+          "aID": {
+            "type": "string",
+            "example": "a1790922"
+          },
+          "password": {
+            "type": "string",
+            "example": "MCIPT05"
+          }
+        }
+      },
+
+      "courseGrade": {
+        "required": ["courseCode"],
+        "properties": {
+          "courseCode": {
+            "type": "string",
+            "example": "7201"
+          }
+        }
+      },
+
+      "dependencyGrade": {
+        "required": ["courseCode"],
+        "properties": {
+          "courseCode": {
+            "type": "string",
+            "example": "7201"
+          },
+          "requiredGrades": {
+            "type": "array",
+            "example": ["HD","D"]
+          }
+        }
+      },
+
+      "courseCode": {
+        "required": ["courseCode"],
+        "properties": {
+          "courseCode": {
+            "type": "string",
+            "example": "7202"
+          }
+        }
+      },
+      
+      "courseRelationship": {
+        "required": ["mainCourse", "relatedCourse"],
+        "properties": {
+          "mainCourse": {
+            "type": "string",
+            "example": "7201"
+          },
+          "relatedCourse": {
+            "type": "string",
+            "example": "7202"
+          },
+          "requiredGrades": {
+            "type": "array",
+            "example": ["HD","D"]
+          }
+        }
+      },
+
+      "courseInfo": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "example": "7202"
+          },
+          "grade": {
+            "type": "string",
+            "example": "HD"
+          }
+        },
+        "xml": {
+          "name": "Tag"
+        }
+      },
+
+      "courseInfoList": {
+        "properties": {
+          "courseInfoList": {
+            "type": "array",
+            "xml": {
+              "name": "courseInfoList",
+              "wrapped": true
+            },
+            "items": {
+              "$ref": "#/definitions/courseInfo"
+            },
+            "example": [
+              {
+                "code": "7202",
+                "grade": "HD"
+              },
+              {
+                "code": "7201",
+                "grade": "HD"
+              },
+              {
+                "code": "7081",
+                "grade": "HD"
+              },
+              {
+                "code": "7064",
+                "grade": "HD"
+              },
+              {
+                "code": "7039",
+                "grade": "HD"
+              }
+            ]
+          }
+        }
+      }
+
+
+    }
+  }

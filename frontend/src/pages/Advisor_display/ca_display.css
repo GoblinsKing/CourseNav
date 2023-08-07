@@ -1,0 +1,128 @@
+.bg_image {
+  background-image: url("../../Global/images/MCIP_background1.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.cad_tatile {
+  padding-top: 5vh;
+  padding-left: 4vw;
+  text-align: left;
+  font-family: Lato-Bold;
+  font-size: 20px;
+  color: #2699fb;
+}
+
+.performance {
+  border-radius: 15px;
+  width: 25vw;
+  height: 45vh;
+  margin: 0 0 5vh 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  margin-top: 5%;
+  height: 530px;
+  /* background-color: aqua; */
+  margin-left: 2%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  margin-top: 3vh;
+  width: 60%;
+}
+
+.buttonCA {
+  font-family: Lato-Bold;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  background-color: #5cb2fc;
+  color: white;
+  width: 12vw;
+  height: 6vh;
+  border-radius: 5px;
+  /* padding: 10px; */
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.buttonCA:hover {
+  background-color: #4f7ced;
+}
+
+.btn_box {
+  margin-top: 3vh;
+}
+
+.course_name_ca {
+  display: flex;
+  text-align: "center";
+  font-size: 16px;
+  font-family: "Lato-Bold";
+  color: #2699fb;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.course_name_ca1 {
+  text-align: "center";
+  font-size: 16px;
+  font-family: "Lato-Bold";
+  color: #2699fb;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.default {
+  /* margin: 3vw 0 4vw 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ca_un {
+  width: 60%;
+}
+.ca_un_image {
+  width: 14vh;
+}
+
+.ca_un_line {
+  text-align: "center";
+  font-size: 14px;
+  font-family: "Lato-Bold";
+  color: #2699fb;
+  margin-top: 1vh;
+  margin-bottom: 6vh;
+}
+
+.ca_un_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

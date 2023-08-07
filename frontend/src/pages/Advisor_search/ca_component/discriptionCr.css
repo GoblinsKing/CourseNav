@@ -1,0 +1,32 @@
+.h1 {
+  font-family: Caudex-Bold;
+  font-size: 40px;
+  color: #2699fb;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+
+.h2 {
+  font-family: Caudex-Bold;
+  font-size: 30px;
+  color: #2699fb;
+  float: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dis {
+  float: center;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.p {
+  font-family: Caudex-Regular;
+  font-size: 12px;
+  color: #2699fb;
+  float: center;
+  text-align: center;
+}

@@ -1,0 +1,125 @@
+.heading1 {
+  font-family: Caudex-Bold;
+  font-size: 40px;
+  color: #2699fb;
+  float: left;
+  text-align: left;
+  text-decoration: none;
+}
+
+.subheader {
+  font-family: Caudex-Bold;
+  font-size: 20px;
+  color: #2699fb;
+  float: left;
+
+  text-align: left;
+  text-decoration: none;
+}
+
+.display_box {
+  float: left;
+  text-align: left;
+  padding: 180px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.para {
+  /* font-family: Caudex-Regular; */
+  font-family: Lato-Regular;
+  font-size: 14px;
+  color: #2699fb;
+  float: left;
+  text-align: left;
+}
+
+.middle {
+  background-image: url("./h_bg.png");
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.middle_box {
+  margin-top: 10vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  height: 60vh;
+  width: 30vw;
+  /* background-color: #f1f8fe; */
+  text-decoration: none;
+}
+
+.center_box {
+  margin-left: 10vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.h_image {
+  width: 7vw;
+}
+
+.sub_2box {
+  margin-top: 5vh;
+  margin-bottom: 0vh;
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #2699fb;
+  text-align: left;
+}
+
+.sub_content {
+  margin-top: 3vh;
+  line-height: 1.6;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  color: #53b0ff;
+  text-align: left;
+  text-decoration: none;
+}
+
+.try {
+  margin-top: 3vh;
+  font-family: Lato-Bold;
+  font-size: 15px;
+  color: #2699fb;
+  text-align: left;
+  text-decoration: none;
+}
+
+.button_h {
+  font-family: Lato-Bold;
+  font-size: 14px;
+  background-color: #2699fb;
+  color: white;
+  width: 25vh;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button_h:hover {
+  font-family: Lato-Bold;
+  font-size: 14px;
+  background-color: #4f7ced;
+  color: white;
+  width: 25vh;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

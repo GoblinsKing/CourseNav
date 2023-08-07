@@ -1,0 +1,242 @@
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  overflow: hidden;
+  background-color: white;
+}
+
+.li {
+  font-family: Lato-bold;
+  font-size: 14px;
+  color: #2699fb;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.li_sub {
+  font-family: Lato-bold;
+  font-size: 14px;
+  color: #8bcaff;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.li_sub:hover {
+  font-family: Lato-bold;
+  font-size: 14.5px;
+  color: #3864d1;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.li2 {
+  font-family: Lato-bold;
+  font-size: 14px;
+  color: #3864d1;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.li:hover {
+  font-family: Lato-bold;
+  font-size: 14.5px;
+  color: #3864d1;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.li_login {
+  font-family: Lato-bold;
+  font-size: 14px;
+  color: #2699fb;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding: 25px 70px;
+  text-decoration: none;
+}
+
+.li_login:hover {
+  font-family: Lato-bold;
+  font-size: 14.5px;
+  color: #3864d1;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding: 25px 70px;
+  text-decoration: none;
+}
+
+.li_a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li_a:hover {
+  background-color: white;
+}
+
+.bg_image {
+  background-image: url("../../../Global/images/MCIP_background.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.link {
+  font-family: Lato-bold;
+  font-size: 14px;
+  color: #2699fb;
+  text-decoration: none;
+}
+
+.link:hover {
+  font-family: Lato-bold;
+  font-size: 14.5px;
+  color: #3864d1;
+  text-decoration: none;
+}
+
+.link2 {
+  font-family: Lato-bold;
+  font-size: 14.5px;
+  color: #3864d1;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: absolute;
+  top: 68px;
+  width: 250px;
+  transform: translateX(-45%);
+  background-color: #c8e0f5;
+  border: var(1px solid #474a4d);
+  border-radius: var(8px);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.dropdown:hover {
+  background-color: #a7d0f5;
+}
+
+.dropdownmenu {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(8px);
+  transition: backgroud var(500ms);
+  padding: 0.5rem;
+}
+
+.dropdown1 {
+  font-family: "Lato-Bold";
+  color: #2699fb;
+  padding-left: 25px;
+}
+
+.dropdownmenu:hover {
+  background-color: #c8e0f5;
+}
+
+.footer_contain {
+  margin: 0;
+  padding: 10;
+  background-color: #e8e8ff;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+}
+
+.f_col {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vh;
+  margin-left: 10vw;
+  width: 25vw;
+  margin-bottom: 5vh;
+  /* background-color: red; */
+  text-align: left;
+}
+
+.f_li {
+  font-family: Lato-bold;
+  font-size: 12px;
+  color: #2699fb;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 2vh 2vh;
+  text-decoration: none;
+}
+
+.f_li:hover {
+  font-family: Lato-bold;
+  font-size: 12px;
+  color: #3864d1;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 2vh 2vh;
+  text-decoration: none;
+}
+
+.course_nav {
+  font-family: Caudex-Bold;
+  font-size: 25px;
+  color: #2699fb;
+  float: left;
+  display: block;
+  text-align: left;
+  padding: 2vh 2vh;
+  text-decoration: none;
+}
+
+.team05 {
+  font-family: Lato-Regular;
+  font-size: 12px;
+  color: #2699fb;
+  float: left;
+  display: block;
+  text-align: left;
+  padding-top: 2vh;
+  padding-left: 2vh;
+  text-decoration: none;
+}
+
+.f_col_img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-left: 3vw;
+  width: 25vw;
+  margin-bottom: 5vh;
+  /* background-color: red; */
+  text-align: center;
+}
+
+.f_image {
+  width: 50%;
+}

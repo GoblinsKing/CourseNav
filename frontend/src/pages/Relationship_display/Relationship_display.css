@@ -1,0 +1,308 @@
+.bgimage {
+  background-image: url("../../Global/images/MCIP_background.png") no-repeat
+    center center fixed;
+  background-size: contain;
+  height: 100vh;
+}
+
+.container {
+  background-image: url("../../Global/images/MCIP_background.png");
+  background-size: cover;
+  overflow-y: scroll;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.container2 {
+  background-image: url("../../Global/images/MCIP_background.png");
+  background-size: cover;
+  overflow-y: scroll;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.overall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.container_dep {
+  background-image: url("../../Global/images/MCIP_background.png");
+  background-size: cover;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.pre_container {
+  width: 60vh;
+  height: 100%;
+  margin: 11vh 0 0 18vw;
+}
+
+.dep_container {
+  width: 60vh;
+  height: 100%;
+  margin-top: 11vh;
+  margin-right: 13vw;
+  /* margin: 11vh 18vw 0 0; */
+}
+
+.course_container {
+  width: 53vh;
+  height: 100vh;
+  margin: 10vh 0 0 10vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10vh;
+  right: 18vw;
+}
+
+.course_container_dep {
+  width: 53vh;
+  height: 100%;
+  margin: 10vh 0 0 10vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10vh;
+  left: 13vw;
+  align-items: center;
+}
+
+.dep_box {
+  border-radius: 15px;
+  width: 28vw;
+  height: 28vh;
+  margin: 0 0 5vh 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+.pre_box {
+  border-radius: 15px;
+  width: 28vw;
+  height: 28vh;
+  margin: 0 0 5vh 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pre_box1 {
+  border-radius: 15px;
+  border-width: thin;
+  border-style: solid;
+  border-color: #2699fb;
+  width: 28vw;
+  height: 28vh;
+  margin: 0 0 5vh 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pre_box:hover {
+  opacity: 90%;
+  border-width: thin;
+  border-style: solid;
+  border-color: #2699fb;
+  /* background-color: #edf2ff; */
+}
+
+.pre_box2 {
+  background-color: red;
+  border-width: thin;
+  border-style: solid;
+  border-color: #2699fb;
+}
+
+.pre_box:visited {
+  background-color: green;
+  border-width: thin;
+  border-style: solid;
+  border-color: #2699fb;
+}
+.un_box {
+  border-radius: 15px;
+  width: 28vw;
+  height: 28vh;
+  margin: 0 0 5vh 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.course_name {
+  text-align: "center";
+  font-size: 16px;
+  font-family: "Lato-Bold";
+  color: #2699fb;
+}
+
+.course_name_pre {
+  text-align: "center";
+  font-size: 14px;
+  font-family: "Lato-Bold";
+  color: #2699fb;
+}
+
+.course_name_title {
+  text-align: "center";
+  font-size: 18px;
+  font-family: "Lato-Bold";
+  color: #2699fb;
+  text-align: center;
+  margin: 2vh 0 1vh 0;
+}
+
+.course_name_sub {
+  text-align: "center";
+  font-size: 16px;
+  font-family: "Lato-Bold";
+  color: #2699fb;
+  text-align: center;
+  margin: 0 0 1vh 0;
+}
+
+.distribution_box {
+  border-radius: 20px;
+  width: 53vh;
+  height: 53vh;
+  margin: 0 0 5vh 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grade {
+  width: 40vh;
+}
+
+.buttonBack {
+  font-family: Lato-Bold;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  background-color: #5cb2fc;
+  color: white;
+  width: 8vw;
+  height: 7vh;
+  border-radius: 5px;
+  /* padding: 10px; */
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.buttonBack:hover {
+  background-color: #4f7ced;
+}
+
+.buttonNext {
+  text-align: center;
+  vertical-align: middle;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  background-color: #87c6fc;
+  color: white;
+  width: 8vw;
+  height: 7vh;
+  border-radius: 5px;
+  /* padding: 10px; */
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+._button {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.unavailable {
+  margin: 3vw 0 4vw 0;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.un_image {
+  width: 10vh;
+}
+
+.un_line {
+  text-align: "center";
+  font-size: 14px;
+  font-family: "Lato-Bold";
+  color: #2699fb;
+  margin-top: 1vh;
+}
+
+.sBar:hover {
+  fill: #3864d1;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.allCircles {
+  font-size: 12px;
+}
+.sBar {
+  /* color: #2699fb; */
+  color: red;
+  font-size: 12px;
+}
+
+.dBar {
+  font-size: 12px;
+}
+
+.obar {
+  font-size: 14px;
+}
+
+.distribution_box_dep {
+  border-radius: 20px;
+  width: 53vh;
+  height: 53vh;
+  margin: 0 0 5vh 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.boxes {
+  font-family: Lato-Regular;
+  color: #2699fb;
+  background-color: #f1f9ff;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 40px;
+  margin: 10px 0;
+  width: 420px;
+  border: 1px solid #bce0fd;
+  outline: none;
+}
+
+.button1 {
+  font-family: Lato-Regular;
+  font-size: 14px;
+  background-color: #2699fb;
+  color: white;
+  width: 474px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button1:hover {
+  font-family: Lato-Regular;
+  font-size: 14px;
+  background-color: #4f7ced;
+  color: white;
+  width: 474px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2699fb;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+
+form {
+  /*background-color: red;*/
+  text-align: center;
+}
+
+.link {
+  font-family: Lato-Bold;
+  text-align: center;
+  color: #2699fb;
+  font-size: 14px;
+}

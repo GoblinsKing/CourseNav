@@ -1,0 +1,82 @@
+.bg_image {
+  background-image: url("../../Global/images/MCIP_background1.png");
+  background-size: cover;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Web-menu {
+  width: 30vh;
+  height: 100vh;
+  margin: 0vh;
+  padding: 3vh;
+  border: 0vh;
+  background-color: #f1f8fe;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: #2699fb;
+}
+
+.Menu-bar {
+  width: 30vh;
+  height: 100vh;
+  margin: 0vh;
+  padding: 3vh;
+  border: 0vh;
+  background-color: #f1f8fe;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.tframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
